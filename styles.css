@@ -73,6 +73,19 @@ q {
   color: var(--hero-font-color);
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
 .nav .header-link {
   color: var(--hero-secondary-color);
   display: flex;
@@ -81,6 +94,7 @@ q {
 .nav .header-logo {
   color: var(--header-logo-color);
   font-size: var(--header-logo-size);
+  justify-content: flex-start;
 }
 
 .hero-section .hero-p {

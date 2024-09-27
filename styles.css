@@ -67,17 +67,17 @@ h2 {
 q {
   color: var(--quote-text-color);
 }
-
+/*Hero container*/
 .header {
   background-color: var(--hero-background-color);
   color: var(--hero-font-color);
   width: 100vw;
-  height: 400px;
+  height: auto;
   padding: 0 10rem;
   display: flex;
   flex-direction: column;
 }
-
+/*Nav Bar*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -86,19 +86,21 @@ q {
   margin-bottom: 3rem;
   outline: 1px solid red;
 }
-
+/*Link list*/
 .header-list {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   flex-wrap: nowrap;
   gap: 1.5rem;
-  outline: 1px solid red;
 }
 
 .nav .header-link {
   color: var(--hero-secondary-color);
+  text-decoration: none;
 }
+
+/*Nav logo*/
 
 .nav .header-logo {
   color: var(--header-logo-color);
@@ -107,16 +109,26 @@ q {
   outline: 1px solid red;
 }
 
+/*Hero section parent container*/
+
 .hero-div {
   outline: 1px solid red;
   display: flex;
   flex-direction: row;
+  margin-bottom: 5rem;
 }
+
+/*Hero section is h1, p and btn*/
 
 .hero-section {
   width: 50%;
   outline: 1px solid red;
   font-size: var(--hero-font-size);
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .hero-section .hero-btn {
@@ -124,34 +136,37 @@ q {
   border: none;
   border-radius: 5px;
   padding: 2.5px 12.5px;
+  margin-top: 5px;
   color: var(--header-logo-color);
+  background-color: var(--button-color);
+}
+/*hero-img-placeholder is sibling to hero-section - both asides*/
+.hero-img-placeholder {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--quote-text-color);
 }
 
+/*img*/
 .img-placeholder {
-  width: 60%;
-  height: 80%;
+  width: 20rem;
+  height: 40%;
   background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero-img-placeholder {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: var(--quote-text-color);
-}
+/* hero styles*/
 
 .hero-section .hero-p {
   color: var(--hero-secondary-color);
   font-size: var(--hero-secondary-size);
 }
 
-.hero-section .hero-btn {
-  background-color: var(--button-color);
-}
+/*Quote section*/
 
 .quote-container {
   background-color: var(--quote-background-color);

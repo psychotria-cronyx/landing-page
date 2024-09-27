@@ -73,7 +73,7 @@ q {
   color: var(--hero-font-color);
   width: 100vw;
   height: auto;
-  padding: 0 10rem;
+  padding: 0 15rem;
   display: flex;
   flex-direction: column;
 }
@@ -84,7 +84,6 @@ q {
   align-items: center;
   padding-top: 0.75rem;
   margin-bottom: 3rem;
-  outline: 1px solid red;
 }
 /*Link list*/
 .header-list {
@@ -106,7 +105,6 @@ q {
   color: var(--header-logo-color);
   font-size: var(--header-logo-size);
   justify-content: flex-start;
-  outline: 1px solid red;
 }
 
 /*Hero section parent container*/
@@ -121,14 +119,12 @@ q {
 /*Hero section is h1, p and btn*/
 
 .hero-section {
-  width: 50%;
+  width: 60%;
   outline: 1px solid red;
   font-size: var(--hero-font-size);
-  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .hero-section .hero-btn {
@@ -142,17 +138,16 @@ q {
 }
 /*hero-img-placeholder is sibling to hero-section - both asides*/
 .hero-img-placeholder {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   color: var(--quote-text-color);
 }
 
 /*img*/
 .img-placeholder {
-  width: 20rem;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   background-color: grey;
   display: flex;
   justify-content: center;

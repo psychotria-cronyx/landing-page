@@ -68,13 +68,6 @@ q {
   color: var(--quote-text-color);
 }
 
-
-
-
-
-
-
-
 /*OLD DESIGN BELOW....*/
 .hero-section .hero-p {
   color: var(--hero-secondary-color);
@@ -90,8 +83,6 @@ q {
 .footer-container {
   background-color: var(--hero-background-color);
 }
-
-
 
 /*Hero container*/
 /*.header {
@@ -181,4 +172,3 @@ q {
 }
 
 /* hero styles*/
-

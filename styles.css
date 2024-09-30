@@ -67,8 +67,34 @@ h2 {
 q {
   color: var(--quote-text-color);
 }
+
+
+
+
+
+
+
+
+/*OLD DESIGN BELOW....*/
+.hero-section .hero-p {
+  color: var(--hero-secondary-color);
+  font-size: var(--hero-secondary-size);
+}
+
+/*Quote section*/
+
+.quote-container {
+  background-color: var(--quote-background-color);
+}
+
+.footer-container {
+  background-color: var(--hero-background-color);
+}
+
+
+
 /*Hero container*/
-.header {
+/*.header {
   background-color: var(--hero-background-color);
   color: var(--hero-font-color);
   width: 100vw;
@@ -78,7 +104,7 @@ q {
   flex-direction: column;
 }
 /*Nav Bar*/
-.nav {
+/*.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +112,7 @@ q {
   margin-bottom: 3rem;
 }
 /*Link list*/
-.header-list {
+/*.header-list {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -101,7 +127,7 @@ q {
 
 /*Nav logo*/
 
-.nav .header-logo {
+/*.nav .header-logo {
   color: var(--header-logo-color);
   font-size: var(--header-logo-size);
   justify-content: flex-start;
@@ -109,7 +135,7 @@ q {
 
 /*Hero section parent container*/
 
-.hero-div {
+/*.hero-div {
   outline: 1px solid red;
   display: flex;
   flex-direction: row;
@@ -118,7 +144,7 @@ q {
 
 /*Hero section is h1, p and btn*/
 
-.hero-section {
+/*.hero-section {
   width: 60%;
   outline: 1px solid red;
   font-size: var(--hero-font-size);
@@ -137,7 +163,7 @@ q {
   background-color: var(--button-color);
 }
 /*hero-img-placeholder is sibling to hero-section - both asides*/
-.hero-img-placeholder {
+/*.hero-img-placeholder {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -145,7 +171,7 @@ q {
 }
 
 /*img*/
-.img-placeholder {
+/*.img-placeholder {
   width: 50%;
   height: 100%;
   background-color: grey;
@@ -156,17 +182,3 @@ q {
 
 /* hero styles*/
 
-.hero-section .hero-p {
-  color: var(--hero-secondary-color);
-  font-size: var(--hero-secondary-size);
-}
-
-/*Quote section*/
-
-.quote-container {
-  background-color: var(--quote-background-color);
-}
-
-.footer-container {
-  background-color: var(--hero-background-color);
-}

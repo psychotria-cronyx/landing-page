@@ -242,6 +242,41 @@ section {
   padding: 0.125rem 0.8rem;
 }
 
+/*info section structure*/
+
+.info-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-section-h2 {
+  text-align: center;
+  padding: 1.5rem 0 4rem 0;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.info-img-placeholder {
+  border: 3px solid var(--button-color);
+  border-radius: 5px;
+}
+
+.info-subsection p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
 .quote-container .inner-container,
 .button-section {
   padding: 5rem 0rem 5rem 0rem;
@@ -347,27 +382,6 @@ section {
   }
 }
 /*phone display alternation*/
-
-/*.info-section {
-  display: flex;
-  justify-content: space-evenly;
-}*/
-
-.info-section-h2 {
-  text-align: center;
-}
-
-.info-subsection {
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-img-placeholder {
-  border: 3px solid var(--button-color);
-  border-radius: 5px;
-}
 
 .footer {
   text-align: center;

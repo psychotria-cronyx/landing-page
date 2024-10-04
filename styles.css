@@ -231,7 +231,14 @@ section {
   font-size: var(--hero-secondary-size);
   border: none;
   border-radius: 3px;
-  padding: 0.125rem 0.8rem;
+  padding: 0.5rem 2rem;
+}
+
+.hero-btn:hover {
+  cursor: pointer;
+  background-color: #1f2937;
+  font-weight: bold;
+  border: 2px solid var(--button-color);
 }
 
 /*info section structure*/
@@ -304,15 +311,51 @@ section {
 
 /*this is for screens above 700px*/
 
+@media (max-width: 1500px) {
+  .quote-container .inner-container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .hero-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section .hero-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 1050px) {
   .info {
     flex-basis: 40%;
     display: flex;
     justify-content: center;
   }
+
+  .quote-container .inner-container {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .hero-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: -1rem;
+  }
+
+  .hero-section .hero-btn {
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+  }
+
+  .hero-img-placeholder {
+    margin: 2rem;
+  }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1400px) {
   .hero-div {
     display: flex;
     gap: 20px;
@@ -321,7 +364,15 @@ section {
 
   .hero-div :is(.hero-section, .hero-img-placeholder) {
     flex-basis: 50%;
-    border: 1px solid blue;
+  }
+
+  .hero-section {
+    line-height: 1.3;
+  }
+
+  .hero-section h1,
+  .hero-section p {
+    margin-bottom: 1.5rem;
   }
 
   section {
@@ -344,21 +395,44 @@ section {
     padding: 10px;
   }
 
-  .hero-div {
+  .hero-div .hero-div {
     font-size: 38px;
     line-height: 1.25;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section .hero-h1 {
+    margin-bottom: 1rem;
+    margin-top: -2rem;
   }
 
   .hero-section .hero-p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .hero-btn {
     margin: 0 auto 10px auto;
   }
 
-  .quote-container .inner-container {
-    padding: 5rem 2rem 5rem 2rem;
+  .quote {
+    font-size: 26px;
+    margin: 0 4rem;
+  }
+
+  .quote-author {
+    font-size: 15px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-btn {
+    align-self: center;
+    margin-top: 1rem;
+    padding: 10px 40px;
   }
 }
 

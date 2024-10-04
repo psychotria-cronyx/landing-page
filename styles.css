@@ -74,7 +74,7 @@ q {
   font-size: var(--hero-secondary-size);
 }
 
-/*Image sizing*/
+/*image sizing*/
 .img-placeholder {
   height: auto;
 }
@@ -85,7 +85,7 @@ q {
   height: auto;
 }
 
-/*Illustration svgs*/
+/*illustration svgs*/
 
 .info-img-placeholder {
   width: 200px;
@@ -159,16 +159,18 @@ section {
   padding: 10px;
 }
 
-/*layout*/
+/*LAYOUT*/
 
+/*centers all of the inner containers*/
 .inner-container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 1500px;
-  border: 5px solid cyan;
+  /* border: 5px solid cyan;*/
 }
 
+/*nav space*/
 .nav {
   display: flex;
   align-items: center;
@@ -185,6 +187,7 @@ section {
   padding: 10px 0px;
 }
 
+/*nav font-sizes*/
 .nav .header-logo {
   font-size: 26px;
 }
@@ -193,12 +196,16 @@ section {
   font-size: var(--header-link-size);
 }
 
-.hero-div .img-placeholder {
-  display: block;
-}
-
 .hero-div {
   font-size: var(--hero-font-size);
+}
+
+.hero-div .inner-container {
+  margin: 3.5rem auto 5rem auto;
+}
+
+.hero-div .img-placeholder {
+  display: block;
 }
 
 .hero-p {
@@ -220,6 +227,27 @@ section {
 .quote-container .inner-container,
 .button-section {
   padding: 5rem 0rem 5rem 0rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem 0 2.5rem 0;
+  border-radius: 5px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-btn {
+  align-self: stretch;
+  padding: 0 2rem 0 2rem;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 /*this is for screens above 700px*/

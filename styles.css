@@ -116,6 +116,9 @@ header,
 
 .quote-container {
   background-color: var(--quote-background-color);
+  font-size: var(--info-header-size);
+  font-style: var(--quote-text-style);
+  font-weight: var(--quote-text-weight);
 }
 
 .button-container,
@@ -214,49 +217,81 @@ section {
   padding: 0.125rem 0.8rem;
 }
 
-/*tablet font-sizes*/
-
-@media (max-width: 700px) {
-  .hero-div {
-    font-size: 38px;
-    line-height: 1.25;
-  }
-
-  .header-logo {
-    font-size: 20px;
-  }
-
-  .hero-p,
-  .header-link {
-    font-size: 15px;
-  }
+.quote-container .inner-container,
+.button-section {
+  padding: 5rem 0rem 5rem 0rem;
 }
 
-@media (min-width: 700px) {
+/*this is for screens above 700px*/
+
+@media (min-width: 990px) {
   .hero-div {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
 
   .hero-div :is(.hero-section, .hero-img-placeholder) {
     flex-basis: 50%;
     border: 1px solid blue;
   }
+
+  section {
+    padding: 10px;
+  }
 }
 
-/*phone font-sizes*/
+/*this is for screens 700px or smaller*/
 
-@media (max-width: 475px) {
-  .header-logo {
-    font-size: 10px;
+@media (max-width: 700px) {
+  .nav .header-logo {
+    font-size: 20px;
   }
 
-  .header-list {
-    font-size: 10px;
+  .nav .header-link {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 10px;
   }
 
   .hero-div {
-    font-size: 1px;
+    font-size: 38px;
+    line-height: 1.25;
+  }
+
+  .hero-section .hero-p {
+    font-size: 15px;
+  }
+
+  .hero-btn {
+    margin: 0 auto 10px auto;
+  }
+
+  .quote-container .inner-container {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+}
+
+/*this is for screens below 475px*/
+
+@media (max-width: 475px) {
+  .nav .header-logo {
+    font-size: 15px;
+  }
+
+  .nav .header-link {
+    font-size: 12px;
+  }
+
+  .hero-div {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero-btn {
+    margin: 0 auto 10px auto;
   }
 }
 /*phone display alternation*/
@@ -280,4 +315,8 @@ section {
 .info-img-placeholder {
   border: 3px solid var(--button-color);
   border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
 }

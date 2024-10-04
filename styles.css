@@ -163,21 +163,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border: 2px solid yellow;
 }
 
 .main-container {
   flex: 1;
-  border: 2px solid red;
-}
-
-.nav,
-.footer {
-  border: 1.5px solid orange;
 }
 
 section {
-  border: 2px solid purple;
   padding: 10px;
 }
 
@@ -249,6 +241,7 @@ section {
   overflow: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -310,6 +303,14 @@ section {
 }
 
 /*this is for screens above 700px*/
+
+@media (max-width: 1050px) {
+  .info {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 @media (min-width: 990px) {
   .hero-div {

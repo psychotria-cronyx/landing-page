@@ -76,14 +76,16 @@ q {
 
 /*Image sizing*/
 .img-placeholder {
-  width: 500px;
   height: auto;
 }
 
 .hero-img {
+  display: block;
   width: 100%;
   height: auto;
 }
+
+/*Illustration svgs*/
 
 .info-img-placeholder {
   width: 200px;
@@ -94,7 +96,7 @@ q {
 }
 
 /*styles*/
-
+header,
 .nav,
 .hero-div,
 .header-logo {
@@ -135,6 +137,7 @@ q {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   border: 2px solid yellow;
 }
 
@@ -150,14 +153,23 @@ body {
 
 section {
   border: 2px solid purple;
+  padding: 10px;
 }
 
 /*layout*/
 
+.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1500px;
+  border: 5px solid cyan;
+}
+
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav .header-list,
@@ -167,6 +179,7 @@ section {
   text-decoration-line: none;
   display: flex;
   gap: 1.25rem;
+  padding: 10px 0px;
 }
 
 .nav .header-logo {
@@ -174,8 +187,79 @@ section {
 }
 
 .nav .header-list {
-  font-size: 15px;
+  font-size: var(--header-link-size);
 }
+
+.hero-div .img-placeholder {
+  display: block;
+}
+
+.hero-div {
+  font-size: var(--hero-font-size);
+}
+
+.hero-p {
+  font-size: var(--hero-secondary-size);
+  color: var(--hero-secondary-color);
+  margin-bottom: 0.65rem;
+}
+
+.hero-btn {
+  display: block;
+  background-color: var(--button-color);
+  color: var(--hero-font-color);
+  font-size: var(--hero-secondary-size);
+  border: none;
+  border-radius: 3px;
+  padding: 0.125rem 0.8rem;
+}
+
+/*tablet font-sizes*/
+
+@media (max-width: 700px) {
+  .hero-div {
+    font-size: 38px;
+    line-height: 1.25;
+  }
+
+  .header-logo {
+    font-size: 20px;
+  }
+
+  .hero-p,
+  .header-link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  .hero-div {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero-div :is(.hero-section, .hero-img-placeholder) {
+    flex-basis: 50%;
+    border: 1px solid blue;
+  }
+}
+
+/*phone font-sizes*/
+
+@media (max-width: 475px) {
+  .header-logo {
+    font-size: 10px;
+  }
+
+  .header-list {
+    font-size: 10px;
+  }
+
+  .hero-div {
+    font-size: 1px;
+  }
+}
+/*phone display alternation*/
 
 /*.info-section {
   display: flex;
